@@ -79,10 +79,9 @@ void mglReadPixels(MGLsize width,
        {
            for( int y = 0; y < height ; y++)
            {
+             Make_Pixel(255,255,255);
            }
-       }
-    //rasterize first and then store into teh fram buffer
-    //then output the fram buffer useing make_pixel;
+       }  
 }
 
 /**
@@ -128,7 +127,7 @@ void mglVertex2(MGLfloat x,
         NumOfVert++;
         if(NumOfVert == 3)
         {
-           //mglReadPixels 
+        
         }
   }
 }
@@ -152,11 +151,7 @@ void mglVertex3(MGLfloat x,
        vertex.push_back(y);
        vertex.push_back(z);
        VertexHold = vertex;
-       NumOfVert++; 
-       if(NumOfVert == 4)
-       {
-          //mglReadPixels
-       }  
+       NumOfVert++;   
    }
 }
 
